@@ -5,16 +5,35 @@
 </title>
 <header>
     <ul>
-        <li>
-            <a href="About.asp">About</a></li>
-        <li>
-            <a href="Store.asp">Store</a></li>
+       <div class="right"
+        href="About.asp">About
+       </div>
+       <div class="left"
+        href="Store.asp">Store
+       </div>
         <li>
             <a href="Gmail.asp">Gmail</a></li>
         <li>
             <a href="Images.asp">Images</a></li>
         <style>
+        .left{
+            float: left;
+            width: auto;
+            border: none;
+            padding: 0cm
+            ;
+        }
+        .right{
+            float: right;
+            width: auto;
+            border: none;
+            padding: 0cm;
+        }
+        ul {
+            list-style-type: none;
+        }
         li {
+            text-align: left;
             font-display: width: 30px;}
         li a {
             width: 60px;
@@ -22,7 +41,12 @@
         ul a    {
             color: black;
             text-align: center;
-
+        }
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 30%;
         }
         </style>
     </ul>
