@@ -1,61 +1,71 @@
 <!DOCTYPE html>
-    
-<title>
-    Welcome to a fake ass google
-</title>
-<header>
-    <ul>
-       <div class="right"
-        href="About.asp">About
-       </div>
-       <div class="left"
-        href="Store.asp">Store
-       </div>
-        <li>
-            <a href="Gmail.asp">Gmail</a></li>
-        <li>
-            <a href="Images.asp">Images</a></li>
+<html>
+    <head>
+
+    </head>
+    <body>
+    <title>My google page</title>
+    <header>
+        <div class="btn1">
+            <button type="button">About</button>
+        </div>
+        <div class="btn2">
+            <button type="button">Store</button>
+        </div>
+        <div class="btn3">
+            <button type="button">Gmail</button>
+        </div>
+        <div class="btn4">
+            <button type="button">Images</button>
+        </div>
+            <button style="color: white;" class="btn5" type="button">Sign In</button>
         <style>
-        .left{
-            float: left;
-            width: auto;
-            border: none;
-            padding: 0cm
-            ;
+        div button :hover {
+            text-decoration: underline;
         }
-        .right{
-            float: right;
-            width: auto;
-            border: none;
-            padding: 0cm;
+        div button {
+            background-color: transparent; border: none; outline: none;
         }
-        ul {
-            list-style-type: none;
+        .btn1 {
+            margin-top: 20px; margin-left: 5px;
         }
-        li {
-            text-align: left;
-            font-display: width: 30px;}
-        li a {
-            width: 60px;
+        .btn2 {
+            margin-top: -18px; margin-left: 60px;
         }
-        ul a    {
-            color: black;
-            text-align: center;
+        .btn3 {
+            margin-top: -18px; margin-left: 1075px;
         }
-        img {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 30%;
+        .btn4 {
+            margin-top: -18px; margin-left: 1125px; padding: 0px; float: left;
+        }
+        .btn5 {
+            margin-top: -18px; margin-left: 1250px; border-color: #4285f4;
+            background-color: #4285f4; float: left;
+        }
+        .header {
+            font-family: arial,sans-serif;
         }
         </style>
-    </ul>
-</header>
-<body>
-    <h1>
-            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" 
-            alt="google logo" height="92" width="272"
-            style="padding-top: 109px; font-size: small; align-content: center; vertical-align: middle;"
-            
-    </h1>
-</body>
+    </header>
+    <main>
+         <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" 
+        alt="Google Logo" width="272" height="92">
+        <style>
+        img {text-align: center; position: absolute; margin: auto; top: 0; right: 0; bottom: 0; 
+        left: 0;
+        }
+        </style>
+        <div class="searchbar">
+            <input type="text" id="search" placeholder="Search...">
+            <style>
+            .searchbar {
+                text-align: center; margin-top: 350px;
+            }
+            #search  {
+                width: 6in; height: 1cm; border-radius: 25px;
+            }
+            </style>
+        </div>        
+    </main>
+    </body>
+</html>
